@@ -1,0 +1,12 @@
+[Unit]
+Description=aqara MQTT bridge
+After=multi-user.target mosquitto.service
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python3 /opt/aqara-mqtt/main.py
+WorkingDirectory=/opt/aqara-mqtt
+User=aqara
+
+[Install]
+WantedBy=multi-user.target
