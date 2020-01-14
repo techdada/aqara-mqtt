@@ -37,6 +37,9 @@ aqara:
   restart: always
 ```
 
+## Systemd unit
+Alternatively to docker there is a systemd unit file aqara-mqtt.service to natively run the code
+
 ## Related projects
 - https://github.com/lazcad/homeassistant
 - https://github.com/fooxy/homeassistant-aqara/
